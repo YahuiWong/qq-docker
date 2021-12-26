@@ -4,6 +4,7 @@
 # 运行
 ```
 docker run --name qq \
+  -v {qq配置信息路径}:/configtencentqq:/root/.config/tencent-qq
   -p {VNC端口}:5900 \
   -p {WEB端口}:6080 \
   -e VNC_SERVER_PASSWD='{VNC密码}' \

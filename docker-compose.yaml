@@ -6,8 +6,7 @@ services:
     environment:
       - VNC_SERVER_PASSWD=passwd
     volumes:
-      - ./config:/root/qq
-      - ./qqdownload:/root/qqdownload
+      - ./configtencentqq:/root/.config/tencent-qq
     ports:
       - 5900:5900 #{VNC端口}
       - 6080:6080 # {WEB端口}
