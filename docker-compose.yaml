@@ -1,0 +1,14 @@
+version: "3"
+services:
+  qq:
+    image: yahuiwong/qq:v4.3.0
+    container_name: qq
+    environment:
+      - VNC_SERVER_PASSWD=passwd
+    volumes:
+      - ./config:/root/qq
+      - ./qqdownload:/root/qqdownload
+    ports:
+      - 5900:5900 #{VNC端口}
+      - 6080:6080 # {WEB端口}
+    restart: unless-stopped
