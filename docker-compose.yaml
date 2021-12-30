@@ -1,7 +1,7 @@
 version: "3"
 services:
   qq:
-    image: yahuiwong/qq:v4.3.0
+    image: yahuiwong/qq
     container_name: qq
     environment:
       - VNC_SERVER_PASSWD=passwd
